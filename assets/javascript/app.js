@@ -1,9 +1,9 @@
 $(document).ready(function(){
    //Hide questions when page is loaded 
     $('.page-1').hide();
-    $('.main-section').show();
-    $('#countdown').show();
-    $('.result').hide();
+    $('.main-section').hide();
+    $('#countdown').hide();
+    $('.result').show();
 
 
     //play audio when start button is clicked
