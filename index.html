@@ -12,14 +12,23 @@
    
 </head>
 <body>
+
     <div class="page-1" >
         <div class="row">
-            <header class="begin">Mario Trivia! 
-    You have 90 seconds to complete it! Good luck!</header>
+            <h1 class="begin">Mario Trivia!</h1>
+            <h2>You have 60 seconds to complete 8 questions! 
+                Good luck!</h2>
                 <br>
             <button type="button" id="start-button">  Start! </button>
         </div>
     </div>
+   
+    <div class = "row">
+    <div class= "col-md-12" id="countdown">
+            <div id = "timer"> 60 Seconds!</div>
+        </div>  
+
+
 
     <section class="main-section">
         <div class="row">
@@ -32,14 +41,15 @@
                             <br>
                         <input type='radio' name='q-1' value='3'> an electrician </input>
                             <br>
-                          
-                    <p>  When did the first Mario Bros game come out? </p> 
+                            <br>
+                    <p>  When did the first <i>Mario Bros</i> game come out?</p> 
                         <input type='radio' name='q-2' value='1'> 1990</input>
                             <br>
                         <input type='radio' name='q-2' value='2'> 1975</input>
                             <br>
                         <input type='radio' name='q-2' value='3'> 1983</input>
                             <br>
+                            <br>                           
                     <p>  Who is the creator of Mario? </p> 
                         <input type='radio' name='q-2' value='1'> Shigeru Myamoto</input>
                             <br>
@@ -47,46 +57,80 @@
                             <br>
                         <input type='radio' name='q-2' value='3'> Naoko Takeuchi</input>
                             <br>
-                    <p>  When did the first Mario Bros game come out? </p> 
-                        <input type='radio' name='q-2' value='1'> 1990</input>
                             <br>
-                        <input type='radio' name='q-2' value='2'> 1975</input>
+                    <p>  In what year were the <i>Super Mario Adventures</i> comics released? </p> 
+                        <input type='radio' name='q-4' value='1'> 1982 </input>
                             <br>
-                        <input type='radio' name='q-2' value='3'> 1983</input>
-                            <br>        
+                        <input type='radio' name='q-4' value='2'> 1992 </input>
+                            <br>
+                        <input type='radio' name='q-4' value='3'> 2002</input>
+                                <br>        
                 </form>
             </div>    
             
-            <div class= "col-md-4 " id="middle">
-                <button type="button" id= "submit">submit</button>
-            </div>  
+                    <div class = "col-md-4" id="middle">
+                        <button type="button" id= "submit">submit</button>
+                    </div>
             
             <div class="col-md-4" id="last">
                 <form class="quiz">
-                    <p>  What color is the sky? </p> 
-                        <input type='radio' name='q-3' value='1'> choice 1</input>
+                    <p>  Where does mario and his friends live? </p> 
+                        <input type='radio' name='q-3' value='1'> Super Star Kingdom</input>
                             <br>
-                        <input type='radio' name='q-3' value='2'> choice 2</input>
+                        <input type='radio' name='q-3' value='2'> Mushroom Kingdom</input>
                             <br>
-                        <input type='radio' name='q-3' value='3'> choice 3</input>
+                        <input type='radio' name='q-3' value='3'> Mario Kingdom</input>
                             <br>
-                        
-                    <p>  What color is the sky? </p> 
-                        <input type='radio' name='q-4' value='1'> choice 1</input>
                             <br>
-                        <input type='radio' name='q-4' value='2'> choice 2</input>
+                    <p>  Which of the following is one of Mario's archenemies? </p> 
+                        <input type='radio' name='q-4' value='1'> Toad </input>
                             <br>
-                        <input type='radio' name='q-4' value='3'> choice 3</input>
+                        <input type='radio' name='q-4' value='2'> Luigi </input>
                             <br>
-                   
-                </form>
-                 
+                        <input type='radio' name='q-4' value='3'> Bowser</input>
+                            <br>
+                            <br>
+                    <p>  What was Mario's original name? </p> 
+                        <input type='radio' name='q-2' value='1'> Jumpman</input>
+                            <br>
+                        <input type='radio' name='q-2' value='2'> Marco </input>
+                            <br>
+                        <input type='radio' name='q-2' value='3'> Jumpster</input>
+                            <br>
+                            <br>
+                    <p>  Which of the following is one of Mario's archenemies? </p> 
+                        <input type='radio' name='q-4' value='1'> Toad </input>
+                            <br>
+                        <input type='radio' name='q-4' value='2'> Luigi </input>
+                            <br>
+                        <input type='radio' name='q-4' value='3'> Bowser</input>
+                            <br>
+                </form>           
             </div>
-            
-
+          
         </div>
     </section>
 
+    <section class = "result">
+        <div id="mushroom>"> 
+            <div class="row">
+                <div class="image">
+                    <img id="gameover" src='assets/images/gameover.jpg'> 
+                </div>
+                <div class="caption">
+                    <p>Time's Up!</p>
+                </div>
+                <div class="results">
+                    correct: __
+                    incorrect: __
+                </div>
+            </div>
+        </div>
+    </section>
+
+       
+<br>
+<br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>     
 </body>

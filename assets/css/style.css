@@ -1,52 +1,93 @@
-*{ 
-    box-sizing: border-box;
-} 
 body {
-    background: url("../images/smbackground.jpg") no-repeat center center fixed; 
+    background: url("../images/mariobackground.jpg") no-repeat center center fixed; 
     background-attachment: fixed;
     background-size: cover;
     text-align: left;
     font-family: 'Press Start 2P', cursive;
     color: black;
-    
+    font-size: 12px;
 }
 #start-button {
-   margin-left: 200px;
+   margin-left: 5px;
 }
 .page-1 {
     text-align: center;
 }
 .begin {
-    background: #ffddc9;
-    white-space: pre;
-    margin: 0px;
+    line-height: 70px;
+    padding-top: 246px;
 }
 .quiz {
     background:#ffddc9;
-    border-radius: 15px
-
+    border-radius: 15px;
 }
 
-#submit {
-    text-align: center;
-}
 .main-section {
-    padding: 20px;
-    border-radius: 25px
+    padding: 40px;
+    padding-bottom: 0;
 
 }
 #first {
-    padding-right: 40px;
+    padding-right: 60px;
+    padding-bottom: 0;
 
 }
 #middle {
-    padding-left: 160px;
-    padding-top: 180px;
-
+    padding-left: 140px;
+    padding-top: 315px;
+}
+#submit, 
+#start-button:hover {
+    background-color: #de5918;
+    border-radius: 12px;
+    color: white;
+}
+#submit, 
+#start-button {
+    transition-duration: 1s;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 12px;
 }
 #last {
-    padding-left: 40px;
+    padding-left: 60px;
 }
 p {
-    padding: 10px;
+    padding: 5px;
+}
+#timer {
+    text-align: center;
+    font-size: 60px;
+    padding-left: 10px;
+}
+#gameover {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 660px
+}
+/*Bootstrap text overlay https://gist.github.com/petehouston/85dd33210c0764eeae55*/
+.image {
+    position: relative;
+}
+.caption {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+.results {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
 }
