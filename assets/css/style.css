@@ -1,0 +1,52 @@
+*{ 
+    box-sizing: border-box;
+} 
+body {
+    background: url("../images/smbackground.jpg") no-repeat center center fixed; 
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    
+}
+#start-button {
+   margin-left: 200px;
+}
+.page-1 {
+    text-align: center;
+}
+.begin {
+    background: #ffddc9;
+    white-space: pre;
+    margin: 0px;
+}
+.quiz {
+    background:#ffddc9;
+    border-radius: 15px
+
+}
+
+#submit {
+    text-align: center;
+}
+.main-section {
+    padding: 20px;
+    border-radius: 25px
+
+}
+#first {
+    padding-right: 40px;
+
+}
+#middle {
+    padding-left: 160px;
+    padding-top: 180px;
+
+}
+#last {
+    padding-left: 40px;
+}
+p {
+    padding: 10px;
+}
