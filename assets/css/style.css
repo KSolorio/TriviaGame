@@ -81,7 +81,7 @@ p {
     color: white;
     background: black;
 }
-.results {
+#final {
     position: absolute;
     bottom: 10%;
     left: 0;
