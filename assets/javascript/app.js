@@ -16,6 +16,10 @@ $(document).ready(function(){
     //variables
     var incorrect = 0;
     var correct = 0; 
+    var unanswered = 0;
+    var question = 'none';
+    var input = 'none';
+    var answer = 'none';
     
     //when start button is cliked 
     $('#start-button').click(function() {
@@ -27,7 +31,7 @@ $(document).ready(function(){
       start();
 
       
-      var seconds = 5; 
+      var seconds = 20; 
      
      //function when start button is clicked
       function start() {
@@ -40,6 +44,16 @@ $(document).ready(function(){
        //when time runs out
        if (seconds === 0) {
          stop();
+         hurryAudio.pause();
+         $('.main-section').hide();
+         $('.result').show();
+         $('#countdown').hide();
+         $('#final').text('correct:'+ correct + '   ' + 'incorrect:' + incorrect + '   ' + ' unanswered:' + unanswered);
+        console.log(correct);
+        }
+        else if (seconds === 15) {
+          audio.pause();
+          hurryAudio.play();
         }
       }
        //function for stopping the timer
@@ -49,10 +63,11 @@ $(document).ready(function(){
      
     }); 
     
-    // //function to check answers
-    //   function checkAnswers() {
+     //function to check answers
+     
+     
 
-    //   }
+      
 
     //when submit button is cliked
     $('#submit').click(function() {
@@ -60,12 +75,10 @@ $(document).ready(function(){
       $('.page-1').hide();
       $('#countdown').hide();
       $('.result').show();  
-      
-      // checkAnswers();
+      //checkAnswers();
       audio.pause();
-      
-      //not working
-      $('#final').text('correct:'+ correct + '   ' + 'incorrect: ' + incorrect);
+      hurryAudio.pause();
+      $('#final').text('correct:'+ correct + '   ' + 'incorrect:' + incorrect + '   ' + ' unanswered:' + unanswered);
         console.log(correct);
         }); 
 
