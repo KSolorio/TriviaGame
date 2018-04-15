@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 
       //variable for timer 
-      var seconds = 20; 
+      var seconds = 60; 
      
       //function when start button is clicked
       function start() {
@@ -45,7 +45,7 @@ $(document).ready(function(){
          hurryAudio.pause();
          audio.pause();
         }
-        else if (seconds === 60) {
+        else if (seconds === 15) {
           audio.pause();
           hurryAudio.play();
         };
@@ -147,6 +147,7 @@ $(document).ready(function(){
         checkAnswers();
         audio.pause();
         hurryAudio.pause();
+        stop ();
       });
 
   }); 
