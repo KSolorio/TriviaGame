@@ -17,7 +17,8 @@ body {
     line-height: 70px;
     padding-top: 246px;
 }
-.quiz {
+.quiz, 
+.quiz2 {
     background:#ffddc9;
     border-radius: 15px;
 }
@@ -71,19 +72,10 @@ p {
 .image {
     position: relative;
 }
-.caption {
-    position: absolute;
-    top: 15%;
-    left: 0;
-    width: 100%;
-    font-size: 80px;
-    text-align: center;
-    color: white;
-    background: black;
-}
+
 #final {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 0;
     width: 100%;
     text-align: center;
