@@ -45,7 +45,7 @@ $(document).ready(function(){
          hurryAudio.pause();
          audio.pause();
         }
-        else if (seconds === 15) {
+        else if (seconds === 60) {
           audio.pause();
           hurryAudio.play();
         };
