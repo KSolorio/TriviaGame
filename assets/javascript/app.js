@@ -8,9 +8,6 @@ $(document).ready(function(){
 
     //audio files for trivia
     var audio = new Audio('./assets/audio/SuperMarioBros.mp3');
-    var loserAudio = new Audio('./assets/audio/loser.mp3');
-    var winnerAudio = new Audio('./assets/audio/winner.mp3');
-    var hurryAudio = new Audio('./assets/audio/hurry.mp3');
     
     
     //when start button is cliked 
@@ -42,13 +39,8 @@ $(document).ready(function(){
          $('.main-section').hide();
          $('.result').show();
          $('#countdown').hide();
-         hurryAudio.pause();
-         audio.pause();
+        audio.pause();
         }
-        else if (seconds === 15) {
-          audio.pause();
-          hurryAudio.play();
-        };
       };
 
       //function for stopping the timer
@@ -125,31 +117,22 @@ $(document).ready(function(){
         else {
         incorrect++;
         };
-        if (correct >= 6) {
-          winnerAudio.play();
-          hurryAudio.pause();
-        }
-        else {
-          loserAudio.play();
-          huryAudio.pause();
-        };
 
       document.getElementById('correct').innerHTML = ('correct: ' + correct);
       document.getElementById('incorrect').innerHTML =('incorrect: ' + incorrect);
       
     };
       //when submit button is cliked
-      $('#submit').click(function() {
-        $('.main-section').hide();
-        $('.page-1').hide();
-        $('#countdown').hide();
-        $('.result').show();  
+      $('#submit').click(function() { 
         checkAnswers();
+        $('.result').show();
+        $('.main-section').hide();
+        $('#countdown').hide();
+        stop();
         audio.pause();
-        hurryAudio.pause();
-        stop ();
       });
 
-  }); 
+    }); 
 
 });
+
